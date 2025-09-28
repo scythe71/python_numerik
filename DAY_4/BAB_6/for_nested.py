@@ -1,0 +1,9 @@
+# PERULANGAN BERSARANG
+# perulangan yang didalam perulangan akan tereksekusi setiap sekali perulangan luar.
+
+adj = ["red", "big", "tasty"] 
+fruits = ["apple", "banana", "cherry"] 
+ 
+for x in adj: 
+  for y in fruits: 
+    print(x, y)

@@ -1,6 +1,6 @@
 # Banyak Nilai ke Banyak Variabel
 x, y, z = "Orange", "Banana", "Cherry"
 
-print(x)
-print(y)
-print(z)
+print(x) # hasil: Orange
+print(y) # hasil: Banana   
+print(z) # hasil: Cherry

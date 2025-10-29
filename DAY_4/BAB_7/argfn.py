@@ -5,5 +5,5 @@
 def hafalan(juz, bro): # Argumen bisa ditambah sebanyak mungkin asal dipisah dengan koma (,)
     print(f"Hafalan {bro}: {juz} Juz") 
 
-hafalan(1, "Ammar")
+hafalan(30, "Ammar") # Output: Hafalan Ammar: 30 Juz
 # Argumen sering disingkat menjadi args dalam dokumentasi Python.

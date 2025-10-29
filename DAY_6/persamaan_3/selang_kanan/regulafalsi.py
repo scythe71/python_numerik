@@ -24,7 +24,7 @@ if f(a) * f(b) > 0:
     print("Tidak ada akar di antara interval [a,b]")
 
 else:
-    print("="*45 + "BISEKSI" + "="*45)
+    print("="*42 + "REGULAFALSI" + "="*45)
     print(f"{'Iterasi':<8}{'a':<10}{'b':<10}{'c':<13}{'f(a)':<10}{'f(b)':<10}{'f(c)':<10}{'Interval baru':<18}{'Era'}")
     print("-"*98)
     print(f"{iterasi:<8}{a:<10.3f}{b:<10.3f}{c:<13.5f}{fa:<10.3f}{fb:<10.3f}{fc:.5f}")
@@ -54,5 +54,5 @@ else:
     
     print("-"*98)
     akar = b - (fb * (b - a)) / (fb - fa)
-    print(f"\nAkar hampiran = {akar:.4f}")
-    print(f"Nilai Asli = {x1:.4f}")
+    print(f"\nAkar hampiran = {akar:.6f}")
+    print(f"Nilai Asli = {x1:.6f}")

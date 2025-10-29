@@ -3,8 +3,8 @@
 
 # Contoh penggunaan if else pendek dua kondisi
 a = 10
-b = 20
-print("A") if a > b else print("B")
+b = 10
+print("A") if a > b else print("B") # Output: B
 
 # Contoh penggunaan if else pendek tiga kondisi
-print("A") if a > b else print("B") if a < b else print ("=")
+print("A") if a > b else print("B") if a < b else print ("=") # Output: =

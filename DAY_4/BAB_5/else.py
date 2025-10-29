@@ -3,8 +3,6 @@
 
 nilai = 75
 if nilai >= 85:
-    print("Selamat! Anda mendapatkan nilai A.")
-elif nilai >= 70:
-    print("Anda mendapatkan nilai B.") # Juga bisa tanpa menggunakan elif
+    print("Selamat! Anda mendapatkan nilai A.") # Tidak TerOutput
 else:
-    print("Anda harus belajar lebih giat lagi.")
+    print("Anda harus belajar lebih giat lagi.") # Output: Anda mendapatkan nilai B

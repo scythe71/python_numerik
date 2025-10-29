@@ -3,4 +3,4 @@
 fruits = ["apple", "pine", "mellon"]
 
 for fruit in fruits:
-    print(fruit)
+    print(fruit) # Output: apple, pine, mellon

@@ -18,4 +18,4 @@ print(b.split(",")) # Output -> ['Hello', ' Ammar']
 c = "Hello"
 d = "World"
 e = c + ", " + d # tambahkan spasi dan koma
-print(e)
+print(e) # Output -> Hello, World

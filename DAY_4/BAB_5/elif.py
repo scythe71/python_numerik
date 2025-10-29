@@ -1,13 +1,12 @@
 # Elif adalah pernyataan bersyarat tambahan setelah if
 # Elif hanya akan dieksekusi jika kondisi if sebelumnya bernilai False
-
-a = 10
-b = 10
+a = 30
+b = 20
 
 if a > b:
-    print("a lebih besar dari b")
+    print("a lebih besar dari b") # Tidak TerOutput
 elif a == b:
-    print("a sama dengan b")
+    print("a sama dengan b") # Output: a lebih besar dari b 
 
 # Jika pada bahasa lain dikenal dengan else if
 # Maka pada Python dikenal dengan elif

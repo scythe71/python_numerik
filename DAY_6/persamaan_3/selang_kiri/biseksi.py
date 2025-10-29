@@ -26,7 +26,7 @@ else:
     print("="*45 + "BISEKSI" + "="*45)
     print(f"{'Iterasi':<8}{'a':<10}{'b':<10}{'c':<13}{'f(a)':<10}{'f(b)':<10}{'f(c)':<10}{'Interval baru':<18}{'Era'}")
     print("-"*98)
-    print(f"{iterasi:<8}{a:<10.3f}{b:<10.3f}{c:<13.5f}{fa:<10.3f}{fb:<10.3f}{fc:.5f}")
+    # print(f"{iterasi:<8}{a:<10.3f}{b:<10.3f}{c:<13.5f}{fa:<10.3f}{fb:<10.3f}{fc:.5f}")
 
     while Era > toleransi:
         c = (a + b) / 2
@@ -36,13 +36,13 @@ else:
 
         tanda = f(a) * f(c)
         if tanda < 0:
+            # b = c
             interval = f"[{a:.3f}, {c:.3f}]"
             # interval = "[a, c]"
-            b = c
         else:
+            # a = c
             interval = f"[{c:.3f}, {b:.3f}]"
             # interval = "[c, b]"
-            a = c
         
         if c != 0:
             Era = abs((c - c_pref) / c)
@@ -50,8 +50,13 @@ else:
 
         print(f"{iterasi:<8}{a:<10.3f}{b:<10.3f}{c:<13.5f}{fa:<10.3f}{fb:<10.3f}{fc:<10.3f}{interval:<18}{Era:.6f}")
         iterasi += 1
+
+        if tanda < 0:
+            b = c
+        else:
+            a = c
     
     print("-"*98)
     akar = (a + b) / 2
-    print(f"\nAkar hampiran = {akar:.4f}")
-    print(f"Nilai Asli = {x2:.4f}")
+    print(f"\nAkar hampiran = {akar:.6f}")
+    print(f"Nilai Asli = {x2:.6f}")

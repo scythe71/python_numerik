@@ -4,4 +4,4 @@ print("Hello" in txt)  # Output: True
 
 # atau, jika ingin menghasilkan output tertentu
 if "Hello" in txt:
-    print("Hello ada didalam variabel txt.")
+    print("Hello ada didalam variabel txt.") # Output: Hello ada didalam variabel txt

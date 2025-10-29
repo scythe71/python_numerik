@@ -1,15 +1,12 @@
-from .. import abc
-
 def f(x):
     return 2*x**2 + 3*x - 4 # Fungsi f(x)
 
 # input awal interval
-a = 0
-b = 4
+a = -4
+b = 0
 c = (a + b) / 2
 toleransi = 0.00001
 iterasi = 1
-x1 = abc.x[0]
 
 c_pref = 0
 Era = 100
@@ -34,6 +31,8 @@ else:
         fb = f(b)
         fc = f(c)
 
+        print(f"{iterasi:<8}{a:<10.3f}{b:<10.3f}{c:<13.5f}{fa:<10.3f}{fb:<10.3f}{fc:<10.3f}{interval:<18}{Era:.6f}")
+
         tanda = f(a) * f(c)
         if tanda < 0:
             interval = f"[{a:.3f}, {c:.3f}]"
@@ -48,10 +47,9 @@ else:
             Era = abs((c - c_pref) / c)
         c_pref = c
 
-        print(f"{iterasi:<8}{a:<10.3f}{b:<10.3f}{c:<13.5f}{fa:<10.3f}{fb:<10.3f}{fc:<10.3f}{interval:<18}{Era:.6f}")
+        
         iterasi += 1
     
     print("-"*98)
     akar = (a + b) / 2
-    print(f"\nAkar hampiran = {akar:.6f}")
-    print(f"Nilai Asli = {x1:.6f}")
+    print(f"\nAkar hampiran = {akar:.4f}")

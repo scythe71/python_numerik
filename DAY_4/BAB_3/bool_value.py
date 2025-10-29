@@ -7,6 +7,6 @@ print(10 < 9)  # False
 a = 200
 b = 33
 if b > a:
-    print("b lebih besar dari a")
+    print("b lebih besar dari a")  # Tidak TerOutput
 else:
-    print("b tidak lebih besar dari a")
+    print("b tidak lebih besar dari a")  # Output: b tidak lebih besar dari a

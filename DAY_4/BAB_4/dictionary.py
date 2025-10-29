@@ -8,4 +8,6 @@ data_dict = {
 }
 
 for key, value in data_dict.items():
-    print(f"Key: {key}, Value: {value}")
+    print(f"Key: {key}, Value: {value}") # Output: Key: USA, Value: Washington DC
+                                         # Output: Key: Indonesia, Value: Jakarta
+                                         # Output: Key: Malaysia, Value: Kuala Lumpur
